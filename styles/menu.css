@@ -1,0 +1,34 @@
+/* ===========================
+   Estilos para el menú hamburguesa
+   =========================== */
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  top: 40px;
+  z-index: 1000;
+}
+
+.menu.mostrar-menu {
+  display: block;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0b0f2b;
+  font-weight: bold;
+}

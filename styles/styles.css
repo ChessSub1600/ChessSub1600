@@ -1,11 +1,16 @@
+/* ===============================
+   Estilos base para index.html
+   =============================== */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #0b0f2b; /* Negro azulado eléctrico */
+  background-color: #0b0f2b;
   color: #e0e0e0;
   margin: 0;
   padding: 0;
 }
 
+/* HEADER */
 header {
   background-color: #1d223e;
   display: flex;
@@ -31,6 +36,7 @@ header {
   width: auto;
 }
 
+/* NAV */
 nav {
   position: relative;
 }
@@ -66,13 +72,14 @@ nav:hover .menu {
   font-weight: bold;
 }
 
+/* SECCIONES PRINCIPALES */
 section {
   background-color: #16325c;
   color: white;
   padding: 20px;
   margin: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #about, #courses, #contact {
@@ -83,14 +90,17 @@ section {
   border-radius: 8px;
 }
 
+/* BOTÓN */
 .button {
   background-color: #87a6c5;
   color: white;
   padding: 10px;
   text-decoration: none;
   border-radius: 5px;
+  display: inline-block;
 }
 
+/* FOOTER */
 footer {
   background-color: #1d223e;
   color: white;

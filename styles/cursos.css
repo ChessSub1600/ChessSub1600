@@ -1,0 +1,82 @@
+/* ===============================
+   Estilos para la página cursos.html
+   =============================== */
+
+/* Sección cursos básicos */
+#curso-basico {
+  background-color: #f1f9ff;
+  color: #333;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Sección cursos intermedios */
+#curso-intermedio {
+  background-color: #fff8f2;
+  color: #333;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Tarjetas de contenido */
+.curso-card {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Títulos dentro de tarjetas */
+.curso-card h3 {
+  color: #16325c;
+  margin-bottom: 10px;
+}
+
+/* Párrafos dentro de tarjetas */
+.curso-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Vídeos embebidos */
+.video-ajedrez {
+  max-width: 100%;
+  width: 90%;
+  aspect-ratio: 16/9;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Botón estilo curso */
+.button {
+  background-color: #ffba08;
+  color: #0b0f2b;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Colores temáticos */
+section h2 {
+  color: #ff5c5c;
+  font-size: 26px;
+}
+
+section h3 {
+  color: #87a6c5;
+}
+
+section p {
+  color: #2d2d2d;
+}

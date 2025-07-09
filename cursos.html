@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos Básicos - ChessSub1600</title> <!-- Estilos del proyecto -->
+    <link rel="stylesheet" href="https://chessboardjs.com/css/chessboard.css">
+
+    <link rel="stylesheet" href="styles/cursos.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+</head>
+
+<body> <!-- Curso Básico -->
+
+    <section id="curso-basico">
+        <h2>♟️ Curso Básico (ELO 800–1200)</h2>
+        <p>Curso para principiantes. Aprende aperturas, evita errores y mejora tus combinaciones.</p>
+        <div class="curso-card">
+            <h3>Aperturas iniciales</h3>
+            <p>Ideas como 1.e4, 1.d4 y desarrollo activo. Control del centro.</p> <iframe class="video-ajedrez"
+                src="https://www.youtube.com/embed/A1B2C3D4E5F" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="curso-card">
+            <h3>Evita errores comunes</h3>
+            <p>Errores típicos como reyes expuestos o caballos mal colocados.</p> <iframe class="video-ajedrez"
+                src="https://www.youtube.com/embed/A1B2C3D4E5F" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="curso-card">
+            <h3>Ejercicio práctico</h3>
+            <p>Descarga de PDF con ejercicios de mate y desarrollo.</p> <a href="ejercicios_basicos.pdf" class="button"
+                target="_blank">Descargar ejercicios PDF</a>
+        </div>
+    </section> <!-- Curso Intermedio -->
+    <section id="curso-intermedio">
+        <h2>♜ Curso Intermedio (ELO 1200–1600)</h2>
+        <p>Mejora tu estrategia, cálculo y comprensión posicional.</p>
+        <div class="curso-card">
+            <h3>Principios estratégicos</h3>
+            <p>Identifica debilidades, prepara rupturas y transiciones eficaces.</p> <iframe class="video-ajedrez"
+                src="https://www.youtube.com/embed/A1B2C3D4E5F" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="curso-card">
+            <h3>Ejemplo práctico en tablero interactivo</h3>
+            <p>Mueve piezas en una posición real y aplica conceptos estudiados.</p> <!-- Darle forma a mi tablero -->
+<div id="chessboard" style="width: 100%; max-width: 400px; margin: 20px auto;">
+</div>
+<!-- Contenedor de última jugada -->
+<div id="ultimaJugada" style="text-align: center; margin: 10px;"></div>
+<!-- Botón para reiniciar -->
+<button id="resetBoard">🔄 Reiniciar tablero</button>
+<!-- Panel para historial -->
+<div id="historialJugada" style="margin-top: 10px; padding: 10px; border: 1px solid #ccc;"></div>
+
+        </div>
+
+        <div class="curso-card">
+            <h3>Análisis de partida Sub1600</h3>
+            <p>Revisión de errores tácticos y estratégicos en partidas reales.</p> <iframe class="video-ajedrez"
+                src="https://www.youtube.com/embed/A1B2C3D4E5F" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section> <!-- Scripts al final -->
+    <!-- jQuery primero -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- chess.js para la lógica del juego -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <!-- Chessboard.js para renderizar el tablero -->
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+
+
+   <script src="scripts/tablero.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
