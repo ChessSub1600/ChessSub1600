@@ -3,7 +3,7 @@
    =============================== */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   background-color: #0b0f2b;
   color: #e0e0e0;
   margin: 0;
@@ -74,12 +74,14 @@ nav:hover .menu {
 
 /* SECCIONES PRINCIPALES */
 section {
+  max-width: 900px;
   background-color: #16325c;
   color: white;
-  padding: 20px;
-  margin: 15px;
+  padding: 30px;
+  margin: 30px auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 #about, #courses, #contact {
@@ -98,12 +100,72 @@ section {
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
+  margin: 10px auto;
 }
+/*estilos hover para botones */
+.button:hover {
+  background-color: #83bcf2;
+  font-size: 1.05em;
+  transition: all 0.2s ease-in-out;
+}
+/* Íconos en contacto whatsapp y el instagram */
+#contact i {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #0db62c;
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+}
+
+#contact i:hover {
+  transform: scale(1.2);
+  color: rgb(38, 221, 38);
+}
+
+/* Enlaces de contacto */
+#contact a {
+  color: rgb(78, 36, 195);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #19873a;
+  font-size: 1.05em;
+}
+
+/*estilos de los logos what e instagram */
+#contact img {
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.3));
+}
+
+#contact a:hover {
+  color: #31e482;
+  font-size: 1.05em;
+  transition: all 0.2s ease-in-out;
+}
+/*boton formulario*/
+#formRegistro button:hover {
+  font-size: 20px;
+  color: rgb(218, 218, 218);
+  background-color: rgb(33, 33, 84);
+  width: 500px;
+}
+/*hover a los imputs del formulario*/
+#formRegistro input:hover {
+  font-size: 18px;
+  
+  
+}
+
 
 /* FOOTER */
 footer {
   background-color: #1d223e;
-  color: white;
+  color: rgb(208, 238, 32);
   text-align: center;
   padding: 10px;
 }

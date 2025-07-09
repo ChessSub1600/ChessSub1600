@@ -30,7 +30,7 @@
   padding: 25px;
   margin-top: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(131, 87, 213, 0.1);
 }
 
 /* Títulos dentro de tarjetas */
@@ -69,14 +69,14 @@
 
 /* Colores temáticos */
 section h2 {
-  color: #ff5c5c;
+  color: #2f4097;
   font-size: 26px;
 }
 
 section h3 {
-  color: #87a6c5;
+  color: #2f4097;
 }
 
 section p {
-  color: #2d2d2d;
+  color: #131416;
 }
