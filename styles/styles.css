@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b0f2b; /* Negro azulado eléctrico */
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1d223e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.title-logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 12px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+nav {
+  position: relative;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  top: 40px;
+  z-index: 1000;
+}
+
+nav:hover .menu {
+  display: block;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0b0f2b;
+  font-weight: bold;
+}
+
+section {
+  background-color: #16325c;
+  color: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#about, #courses, #contact {
+  background-color: white;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.button {
+  background-color: #87a6c5;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #1d223e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
