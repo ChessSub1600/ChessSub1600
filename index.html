@@ -6,7 +6,6 @@
   <title>ChessSub1600</title>
  <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <link rel="stylesheet" href="styles/styles.css">
 <link rel="stylesheet" href="styles/formulario.css">
 <link rel="stylesheet" href="styles/menu.css">
@@ -22,6 +21,7 @@
   <div class="title-logo">
     <span class="site-title">ChessSub1600</span>
     <img src="img/ImgPerfil.jpg" alt="Logo ChessSub1600" class="logo">
+
   </div>
   <nav>
     <span class="hamburger">&#9776;</span>
@@ -32,6 +32,8 @@
     </ul>
   </nav>
 </header>
+
+<div class="container-clases">
   <!-- Sección sobre clases presenciales -->
   <section id="classes">
     <h2>Clases Presenciales</h2>
@@ -40,8 +42,13 @@
 
   <!-- Sección descriptiva "Sobre mí" -->
   <section id="about">
-    <h2>¿Quién soy?</h2>
-    <p>Soy Johan Duran, jugador apasionado y profesor de ajedrez. Me dedico a enseñar porque el ajedrez mejora la mente y fortalece la concentración. Este proyecto busca acercar el juego a quienes desean mejorar desde cero hasta nivel intermedio.</p>
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      Somos una familia , jugadores  y profesores de ajedrez.
+      nos dedicamos enseñar el ajedrez para mejorar la mente y
+      fortalecer la concentración. Este proyecto busca acercar el
+       juego a quienes desean mejorar desde cero hasta nivel intermedio.
+      </p>
   </section>
 
   <!-- Sección de cursos online -->
@@ -50,33 +57,18 @@
     <p>Accede a nuestros materiales digitales y clases grabadas desde cualquier lugar. ¡Perfecto para quienes prefieren aprender desde casa!</p>
     <a href="cursos.html" class="button">Ir a los cursos</a>
   </section>
+  </div>
+
+
 <section id="registro">
   <img src="img/ImgPerfil.jpg" alt="Foto de perfil" class="registro-foto">
   <p class="frase-capablanca">“El ajedrez es algo más que un juego; es una diversión intelectual que tiene algo de arte y mucho de ciencia.”<br>— José Raúl Capablanca</p>
 
   <h2>¿Quieres saber más sobre los cursos?</h2>
   <p>Rellena este formulario para que podamos contactarte con más información:</p>
+  <!-- boton para registrar en formulario -->
+   <a href="formulario.html" class="registro-link" target="_blank">📝 Registrarme</a>
 
-  <form id="formRegistro">
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" placeholder="Nombre y apellido:" id="nombre" name="nombre" required><br>
-
-    <label for="email">Correo electrónico:</label>
-    <input type="email" placeholder="Correo electrónico:" id="email" name="email" required><br>
-
-    <label for="nivel">Nivel (ELO estimado):</label>
-    <input type="number" placeholder="Elo estimado:" id="nivel" name="nivel"><br>
-
-    <label for="interes">Área que deseas mejorar:</label>
-    <select id="interes" name="interes">
-      <option value="tacticas">Tácticas</option>
-      <option value="estrategia">Estrategia</option>
-      <option value="finales">Finales</option>
-      <option value="aperturas">Aperturas</option>
-    </select><br>
-
-    <button class="botonformu" id="botonformu" type="submit">Enviar</button>
-  </form>
 
   <p id="mensaje"></p>
 </section>
@@ -88,14 +80,19 @@
     <i class="fab fa-whatsapp"></i>
     <a href="https://wa.me/34641194252" target="_blank">+34 641 194252</a>
   </p>
-
   <p>
     <i class="fab fa-instagram"></i>
     <a href="https://www.instagram.com/ChessSub1600" target="_blank">@ChessSub1600</a>
   </p>
 </section>
 
-
+<!-- boton de reserva cita -->
+ <div class="cta-reserva">
+  <h3>¿Quieres mejorar tu nivel Sub1600?</h3>
+  <p>Reserva tu clase presencial o virtual con Daniel. ¡Ajedrez práctico y táctico desde el tablero!</p>
+  <a href="formulario.html" class="button" target="_blank">📝 Inscribirme ahora</a>
+  <a href="https://wa.me/34641194252" class="button" target="_blank">📲 Consultar por WhatsApp</a>
+</div>
 
   <footer>
     <p>© 2025 ChessSub1600 | Hecho con pasión por el Ajedrez</p>

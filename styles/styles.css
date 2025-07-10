@@ -4,15 +4,15 @@
 
 body {
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-  background-color: #0b0f2b;
-  color: #e0e0e0;
+  background-color: #efefef;
+  color: #0055ff;
   margin: 0;
   padding: 0;
 }
 
 /* HEADER */
 header {
-  background-color: #1d223e;
+  background-color: #fffcfc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +71,10 @@ nav:hover .menu {
   color: #0b0f2b;
   font-weight: bold;
 }
-
+/*Div para contener cursos, sobre mi.*/
+.container-clases {
+  background-color: rgb(242, 233, 215);
+}
 /* SECCIONES PRINCIPALES */
 section {
   max-width: 900px;
@@ -83,6 +86,65 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+/*estilos del formulario*/
+#formRegistro label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+#formRegistro input,
+#formRegistro select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+/*boton del registro*/
+.registro-link {
+  background-color: #1d93e1;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.registro-link:hover {
+  background-color: #63b1e5;
+}
+
+
+.consentimiento {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.consentimiento a {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.botonformu {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.botonformu:hover {
+  background-color: #1f6ea5;
+}
+
 
 #about, #courses, #contact {
   background-color: white;
@@ -94,7 +156,7 @@ section {
 
 /* BOTÓN */
 .button {
-  background-color: #87a6c5;
+  background-color: #031528;
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -104,7 +166,7 @@ section {
 }
 /*estilos hover para botones */
 .button:hover {
-  background-color: #83bcf2;
+  background-color: #274b6c;
   font-size: 1.05em;
   transition: all 0.2s ease-in-out;
 }
@@ -157,15 +219,38 @@ section {
 /*hover a los imputs del formulario*/
 #formRegistro input:hover {
   font-size: 18px;
-  
-  
 }
 
 
-/* FOOTER */
 footer {
   background-color: #1d223e;
-  color: rgb(208, 238, 32);
+  color: rgb(219, 255, 17);
+  font-weight: bold;
+  padding: 20px;
+  font-size: 1rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
   text-align: center;
-  padding: 10px;
 }
+/*Boton reserva cita*/
+.cta-reserva {
+  background-color: #16325c;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 900px;
+}
+.cta-reserva h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.cta-reserva p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+.cta-reserva .button {
+  margin: 5px;
+}
+
