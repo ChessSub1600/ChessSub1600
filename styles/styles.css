@@ -5,36 +5,52 @@
 body {
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   background-color: #efefef;
-  color: #0055ff;
+  color: #201d69;
   margin: 0;
   padding: 0;
 }
 
 /* HEADER */
 header {
-  background-color: #fffcfc;
+  background-color: #0b0f2b;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px 15px;  /* antes 20px 30px, ahora más compacto */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #00ffc3;
 }
-
+/*estilos del texto y logo(iagen)*/
+/* Logo y título */
 .title-logo {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .site-title {
-  font-size: 26px;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #fff;
-  margin-right: 12px;
+  color: #00ffc3;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
 .logo {
-  height: 50px;
-  width: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #00ffc3;
+  box-shadow: 0 0 10px #00ffc3;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffc3, 0 0 5px #fff;
+}
+
 
 /* NAV */
 nav {
@@ -57,11 +73,6 @@ nav {
   top: 40px;
   z-index: 1000;
 }
-
-nav:hover .menu {
-  display: block;
-}
-
 .menu li {
   margin-bottom: 10px;
 }
@@ -71,20 +82,89 @@ nav:hover .menu {
   color: #0b0f2b;
   font-weight: bold;
 }
+
+
+/*Historia ajedrez*/
+#historia-ajedrez {
+  position: relative;
+  background-color: rgba(242, 246, 255, 0.95);
+  overflow: hidden;
+  padding: 40px;
+}
+
+.imagen-fondo-ajedrez {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.imagen-fondo-ajedrez img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+  
+  
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 0.99;
+  }
+}
+/*texto por encima de la imagen*/
+#historia-ajedrez h2,
+#historia-ajedrez p {
+  position: relative;
+  z-index: 1;
+}
+
+#historia-ajedrez h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #e1e4fb, #85cef3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 2px 1px rgb(255, 255, 255);
+}
+
+#historia-ajedrez p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  background: linear-gradient(to right, #f0f0f0, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /*Div para contener cursos, sobre mi.*/
 .container-clases {
-  background-color: rgb(242, 233, 215);
+  background-color: rgb(217, 217, 217);
 }
-/* SECCIONES PRINCIPALES */
+/* SECCIONES PRINCIPALES UNIFICADAS */
 section {
   max-width: 900px;
-  background-color: #16325c;
   color: white;
   padding: 30px;
   margin: 30px auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* FONDO Y COLOR PARA SECCIONES CLAVE */
+#classes,
+#about,
+#courses,
+#contact {
+  background: linear-gradient(120deg, #001f3f, #003366);
+  color: #fff;
 }
 /*estilos del formulario*/
 #formRegistro label {
@@ -104,7 +184,7 @@ section {
 }
 /*boton del registro*/
 .registro-link {
-  background-color: #1d93e1;
+  background-color: #0e1fa3;
   color: white;
   padding: 8px 14px;
   border-radius: 6px;
@@ -114,12 +194,11 @@ section {
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
-
 .registro-link:hover {
   background-color: #63b1e5;
+  transition: .4s ease-in-out;
+  font-size: 1rem;
 }
-
-
 .consentimiento {
   margin-top: 15px;
   font-size: 0.9rem;
@@ -142,21 +221,12 @@ section {
 }
 
 .botonformu:hover {
-  background-color: #1f6ea5;
+  background-color: #276a9a;
+  transition: all 0.4s ease-in-out;
 }
-
-
-#about, #courses, #contact {
-  background-color: white;
-  color: #333;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
-}
-
 /* BOTÓN */
 .button {
-  background-color: #031528;
+  background-color: #2c3fef;
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -166,9 +236,9 @@ section {
 }
 /*estilos hover para botones */
 .button:hover {
-  background-color: #274b6c;
+  background-color: #78b1e7;
   font-size: 1.05em;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 /* Íconos en contacto whatsapp y el instagram */
 #contact i {
@@ -194,6 +264,7 @@ section {
 #contact a:hover {
   color: #19873a;
   font-size: 1.05em;
+  transition: all 0.4s ease-in-out;
 }
 
 /*estilos de los logos what e instagram */
@@ -209,18 +280,6 @@ section {
   font-size: 1.05em;
   transition: all 0.2s ease-in-out;
 }
-/*boton formulario*/
-#formRegistro button:hover {
-  font-size: 20px;
-  color: rgb(218, 218, 218);
-  background-color: rgb(33, 33, 84);
-  width: 500px;
-}
-/*hover a los imputs del formulario*/
-#formRegistro input:hover {
-  font-size: 18px;
-}
-
 
 footer {
   background-color: #1d223e;

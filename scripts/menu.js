@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburguesa = document.querySelector(".hamburger");
+  const hamburger = document.querySelector(".hamburger");
   const menu = document.querySelector(".menu");
 
-  if (hamburguesa && menu) {
-    hamburguesa.addEventListener("click", () => {
-      menu.classList.toggle("mostrar-menu");
-    });
-  }
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
 });
