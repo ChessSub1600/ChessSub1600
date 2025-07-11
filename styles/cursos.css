@@ -143,3 +143,15 @@ section p {
   color: #444;
   font-size: 1rem;
 }
+/*marca la casilla seleccionadda de azul*/
+.selected {
+  outline: 3px solid #2c3fef;
+  box-shadow: 0 0 8px rgba(44, 63, 239, 0.5);
+}
+/*para que no salte el borde azul en pantallas moviles*/
+@media (max-width: 500px) {
+  .selected {
+    outline-width: 2px;
+    box-shadow: 0 0 6px rgba(44, 63, 239, 0.4);
+  }
+}

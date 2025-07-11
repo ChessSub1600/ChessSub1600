@@ -4,7 +4,7 @@ body{
 }
 #formulario-registro {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 30px;
   background-color: #f5faff;
   border: 2px solid #3498db;
@@ -24,7 +24,7 @@ body{
 
 #formulario-registro p {
   font-size: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
   color: #222;
 }
@@ -33,14 +33,15 @@ body{
 #formRegistro label {
   font-weight: bold;
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1rem;
   color: #16325c;
+  
 }
 
 #formRegistro input,
 #formRegistro select {
-  width: 100%;
+  width: 580px;
   padding: 12px;
   border: 1px solid #3498db;
   border-radius: 6px;
@@ -48,6 +49,7 @@ body{
   font-size: 1rem;
   background-color: #fff;
   transition: border-color 0.3s ease;
+  
 }
 
 #formRegistro input:focus,
@@ -128,13 +130,13 @@ body{
 .texto-terminos {
   font-size: 0.95rem;
   color: #16325c;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
 
 .casilla {
   position: absolute;
   bottom: 15px;
-  right: 20px;
+  right: -200px;
 }
 .consentimiento input[type="checkbox"] {
   transform: scale(1.2);
