@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', 'Roboto', sans-serif;
-  background-color: #f4f7fd;       /* fondo claro y suave */
+  background-color: #f0faff;       /* fondo claro y suave */
   color: #2c3e50;                  /* texto gris oscuro */
   margin: 0;
   padding: 0;
@@ -82,7 +82,8 @@ section p {
 /*bloques pdf*/
 .pdf-card {
   background-color: #f9f9f9;
-  border-left: 6px solid #3498db;
+  border-left: 16px solid #3498db;
+  border-right: 2px solid #3498db;
   padding: 20px;
   margin: 20px auto;
   border-radius: 8px;
