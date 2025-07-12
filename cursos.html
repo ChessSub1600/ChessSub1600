@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Cursos Básicos - ChessSub1600</title>
-    <!-- Estilos del site cursos.html -->
-      <link rel="stylesheet" href="src/styles/cursos.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cursos Básicos - ChessSub1600</title>
+  <!-- Estilos del site cursos.html -->
+  <link rel="stylesheet" href="/src/styles/cursos.css" />
 
 
-        <link rel="stylesheet" href="src/styles/chessground.base.css">
-<link rel="stylesheet" href="src/styles/chessground.brown.css">
-<link rel="stylesheet" href="src/styles/chessground.custompieces.css"><link rel="stylesheet" href="/src/styles/chessground.brown.css">
-    <!-- CODIGO CLAVE PARA MOSTRAR PIEZAS -->
-     <link rel="stylesheet" href="src/styles/assets/chessground.cburnett.css">
 
-  </head>
-  <body>
+
+</head>
+
+<body>
   <section id="clases-sub1600">
     <h2>🎓 Clases Presenciales y Virtuales Sub1600</h2>
     <p>Complementa tu aprendizaje con sesiones prácticas guiadas. Desde iniciación hasta estrategias
@@ -135,7 +133,7 @@
       </a>
     </div>
 
- <!-- Curso Intermedio -->
+    <!-- Curso Intermedio -->
   </section>
   <section id="curso-intermedio">
     <h2>♜ Curso Intermedio (ELO 1200–1600)</h2>
@@ -149,10 +147,10 @@
     <div class="curso-card">
       <h3>Ejemplo práctico en tablero interactivo</h3>
       <p>Mueve piezas en una posición real y aplica conceptos estudiados.</p> <!-- Darle forma a mi tablero -->
-     
 
-       <!-- ✅ Contenedor del tablero -->
-      <div id="chessboard" style="width: 100%; max-width: 400px; margin: 20px auto;"></div>
+
+      <!-- ✅ Contenedor del tablero -->
+      <div id="chessboard" style="width: 400px; height: 400px;"></div>
       <!-- Contenedor de última jugada -->
       <div id="ultimaJugada" style="text-align: center; margin: 10px;"></div>
       <!-- Botón para reiniciar -->
@@ -163,16 +161,17 @@
 
     <div class="curso-card">
       <h3>Análisis de partida Sub1600</h3>
-      <p>Revisión de errores tácticos y estratégicos en partidas reales.</p> <iframe class="video-ajedrez" src="https://www.youtube.com/embed/i_tuUYezfaE?si=_QF69mAMKw-RYdFLstart=68" frameborder="0"
+      <p>Revisión de errores tácticos y estratégicos en partidas reales.</p> <iframe class="video-ajedrez"
+        src="https://www.youtube.com/embed/i_tuUYezfaE?si=_QF69mAMKw-RYdFLstart=68" frameborder="0"
         allowfullscreen></iframe>
     </div>
   </section>
 
-<!-- ✅ Chessground vía módulo -->
-<script type="module" src="src/scripts/tablero.js"></script>
+  <!-- ✅ Chessground vía módulo -->
+<script type="module" src="/src/scripts/tablero.js"></script>
 
-<!-- ✅ Tu propio menú -->
-<script src="src/scripts/menu.js"></script>
+  <!-- ✅ Tu propio menú -->
+<script src="../src/scripts/menu.js" type="module"></script>
 
 </body>
 
