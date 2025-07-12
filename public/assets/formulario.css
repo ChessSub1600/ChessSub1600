@@ -1,0 +1,159 @@
+/* 🎯 CONTENEDOR DEL FORMULARIO */
+body{
+  background: linear-gradient(to right,rgb(223, 223, 223), rgb(175, 215, 246));
+}
+#formulario-registro {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #f5faff;
+  border: 2px solid #3498db;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: #0b0f2b;
+}
+
+/* 🧾 TÍTULO Y TEXTO DESCRIPTIVO */
+#formulario-registro h2 {
+  color: #16325c;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#formulario-registro p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+}
+
+/* ✍️ CAMPOS DEL FORMULARIO */
+#formRegistro label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #16325c;
+  
+}
+
+#formRegistro input,
+#formRegistro select {
+  width: 580px;
+  padding: 12px;
+  border: 1px solid #3498db;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  
+}
+
+#formRegistro input:focus,
+#formRegistro select:focus {
+  outline: none;
+  border-color: #2c3fef;
+  box-shadow: 0 0 4px rgba(44, 63, 239, 0.3);
+}
+
+/* ✅ BOTÓN REGISTRARME */
+.botonformu {
+  background-color: #0d1ca1;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.botonformu:hover {
+  background-color: #63b1e5;
+}
+
+/* 📩 MENSAJE DE CONFIRMACIÓN */
+#mensaje {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #16325c;
+  text-align: center;
+}
+
+/* 🖼️ FOTO DE PERFIL */
+.registro-foto {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #16325c;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.registro-foto:hover {
+  transform: scale(1.05);
+}
+
+/* ♟️ FRASE CAPABLANCA */
+.frase-capablanca {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+/*boton del acepto los terminos y condiciones*/
+.consentimiento {
+  display: flex;
+  flex-direction: column;
+  background-color: #eef5ff;
+  border: 1px solid #3498db;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.consentimiento label {
+  margin-bottom: 10px;
+}
+.texto-terminos {
+  font-size: 0.95rem;
+  color: #16325c;
+  margin-bottom: 1px;
+}
+
+.casilla {
+  position: absolute;
+  bottom: 15px;
+  right: -200px;
+}
+.consentimiento input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #3498db;
+  cursor: pointer;
+}
+
+.consentimiento label {
+  flex: 1;
+}
+
+.consentimiento a {
+  color: #2c3fef;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.consentimiento a:hover {
+  color: #63b1e5;
+}
