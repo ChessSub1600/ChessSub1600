@@ -7,7 +7,6 @@
   display: block;
   z-index: 1001;
 }
-
 .menu {
   list-style: none;
   position: absolute;
@@ -22,15 +21,12 @@
   box-shadow: 0 5px 20px rgba(0,0,0,0.4);
   z-index: 1000;
 }
-
 .menu.show {
   display: flex;
 }
-
 .menu li {
   margin-bottom: 10px;
 }
-
 .menu li a {
   color: white;
   font-weight: bold;
@@ -39,11 +35,9 @@
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
-
 .menu li a:hover {
   color: #364bef;
 }
-
 /* 📱 Media query: ajustes solo para móviles */
 @media (max-width: 768px) {
   /* Aquí puedes ajustar tamaños, posición o layout si lo necesitas */
@@ -52,11 +46,9 @@
     right: 15px;
     width: 220px;
   }
-
   .menu li {
     margin-bottom: 8px;
   }
-
   .menu li a {
     font-size: 0.95rem;
   }
