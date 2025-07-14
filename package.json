@@ -1,18 +1,7 @@
 {
   "name": "chesssub1600",
   "version": "1.0.0",
-  "description": "Tablero de ajedrez interactivo con Chessground y chess.js usando Vite",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
-  },
-  "dependencies": {
-    "chess.js": "^1.4.0",
-    "chessground": "^9.2.1"
-  },
-  "devDependencies": {
-    "vite": "^7.0.4"
-  }
+  "description": "Project for Chess UI",
+  "main": "index.html",
+  "license": "MIT"
 }
